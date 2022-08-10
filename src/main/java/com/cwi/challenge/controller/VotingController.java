@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/topics")
+@RequestMapping("/topics/{id}/voting")
 public class VotingController {
 
-    @PostMapping("/{id}/voting")
+    @PostMapping
     public ResponseEntity<String> startVoting() {
         return new ResponseEntity<>("VOTING STARTED.", HttpStatus.CREATED);
     }
