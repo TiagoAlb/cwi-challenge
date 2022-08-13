@@ -18,7 +18,7 @@ public class Vote {
     private Associate associate;
 
     @Column(columnDefinition = "boolean default false")
-    private boolean value;
+    private boolean accepted;
 
     @CreationTimestamp
     private LocalDateTime creationDate;
